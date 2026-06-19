@@ -1,0 +1,88 @@
+/* variables.css */
+:root {
+  /* Fonts */
+  --font-serif: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Shadow & Blur */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.12);
+  --glass-blur: 16px;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 24px;
+}
+
+/* Light Theme Variables */
+:root, [data-theme="light"] {
+  --bg-primary: #FAF9F6; /* Premium Alabaster/Beige-White */
+  --bg-secondary: #F3F1EC; /* Warm Sand */
+  --bg-tertiary: #E9E6DF;
+  --bg-card: #FFFFFF;
+  --bg-glass: rgba(255, 255, 255, 0.75);
+  
+  --text-primary: #1C1B19; /* Soft charcoal */
+  --text-secondary: #605E59;
+  --text-muted: #95928C;
+
+  --border-light: rgba(197, 168, 128, 0.15);
+  --border-medium: rgba(197, 168, 128, 0.3);
+  --border-focus: #9C7F58;
+
+  /* Luxury Accent Colors */
+  --gold: #C5A880;
+  --gold-light: #DFCEB7;
+  --gold-dark: #9C7F58;
+  --sage: #7C897A;
+  --sage-light: #DCE2DD;
+  --sage-dark: #586356;
+  --lavender: #9F86C0;
+  --lavender-light: #E0C3FC;
+  --lavender-dark: #5E548E;
+  
+  /* Status Colors */
+  --color-success: #6A9977;
+  --color-warning: #D9A05B;
+  --color-danger: #C86D6D;
+  --color-info: #6D9AC8;
+}
+
+/* Dark Theme Variables */
+[data-theme="dark"] {
+  --bg-primary: #0F1012; /* Deep Obsidian */
+  --bg-secondary: #17191C; /* Dark Slate */
+  --bg-tertiary: #1F2227;
+  --bg-card: #141619;
+  --bg-glass: rgba(20, 22, 25, 0.75);
+  
+  --text-primary: #F5F4F0; /* Soft White */
+  --text-secondary: #A6A4A0;
+  --text-muted: #6E6C68;
+
+  --border-light: rgba(197, 168, 128, 0.08);
+  --border-medium: rgba(197, 168, 128, 0.25);
+  --border-focus: #DFCEB7;
+
+  /* Luxury Accent Colors */
+  --gold: #DFCEB7;
+  --gold-light: #F4EBE0;
+  --gold-dark: #BA9D75;
+  --sage: #9AB099;
+  --sage-light: #283329;
+  --sage-dark: #C2D4C1;
+  --lavender: #BEA8D8;
+  --lavender-light: #E0C3FC;
+  --lavender-dark: #8E7DBE;
+
+  /* Status Colors */
+  --color-success: #8FBCA3;
+  --color-warning: #E3B37C;
+  --color-danger: #D68F8F;
+  --color-info: #8FB6DF;
+}

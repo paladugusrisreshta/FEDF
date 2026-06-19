@@ -1,0 +1,168 @@
+/* Banquet.css */
+.banquet-page {
+  padding: 56px 24px;
+  background-color: var(--bg-primary);
+  min-height: calc(100vh - 73px);
+}
+
+.banquet-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.banquet-layout-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 40px;
+  align-items: start;
+  margin-top: 40px;
+}
+
+.halls-catalog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hall-catalog-card {
+  display: flex;
+  overflow: hidden;
+  cursor: pointer;
+  border-left: 3px solid transparent;
+}
+
+.hall-catalog-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--border-medium);
+}
+
+.hall-catalog-card.selected {
+  border-left-color: var(--gold);
+  background-color: rgba(197, 168, 128, 0.03);
+  box-shadow: var(--shadow-lg);
+}
+
+.hall-catalog-img {
+  width: 220px;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.hall-catalog-body {
+  padding: 24px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hall-title-price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.hall-catalog-name {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.hall-catalog-price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.hall-catalog-price small {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.hall-capacity-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  margin-top: 6px;
+  margin-bottom: 12px;
+}
+
+.hall-select-indicator {
+  text-align: right;
+  margin-top: auto;
+}
+
+/* Form panel */
+.banquet-booking-form-panel {
+  padding: 40px;
+}
+
+.banquet-form-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Extras checklist */
+.extras-checklist-section {
+  border-top: 1px solid var(--border-light);
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.checklist-section-title {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.checklist-item-row {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.checkbox-title {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  display: block;
+}
+
+.checkbox-desc {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  display: block;
+  margin-top: 2px;
+  line-height: 1.4;
+}
+
+@media (max-width: 992px) {
+  .banquet-layout-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .hall-catalog-card {
+    flex-direction: column;
+  }
+  .hall-catalog-img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+  }
+}

@@ -1,0 +1,50 @@
+/* PageNotFound.css */
+.notfound-page {
+  padding: 80px 24px;
+  background-color: var(--bg-primary);
+  min-height: calc(100vh - 73px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notfound-card {
+  max-width: 460px;
+  width: 100%;
+  padding: 48px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.notfound-title {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.notfound-code {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+  letter-spacing: 0.1em;
+  background: var(--bg-secondary);
+  padding: 4px 12px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  display: inline-block;
+  border: 1px solid var(--border-light);
+}
+
+.notfound-desc {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.return-btn {
+  width: 100%;
+}
